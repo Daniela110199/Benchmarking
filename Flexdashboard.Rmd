@@ -1,0 +1,59 @@
+---
+title: "Covenant of Majors"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Benchmarking de la implementación de las politicas sustentables
+
+
+En este trabajo analizaremos que tan bien o que tan mal es el desempeño de los intendentes del municipio (las acciones de los municipios de Maipú, Ciudad, Las Heras) 
+```{r}
+CO2 <- rnorm(50, 200, 30)
+#gereneramos una variable con 50 datos, media 200 y varianza 30
+hist(CO2)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Participación de cada municipio
+
+```{r}
+muni<- c("Capital", "Godoy Cruz", "Guaymallén", "Maipú", "Luján", "Las Heras")
+munico2<- c(300, 250, 270, 320, 412, 330)
+pie(munico2, labels = muni)
+
+```
+
+### Transporte público
+===
+```{r}
+
+```
+RSU (Residuos Sólidos Urbanos)
+===
+```{r}
+
+```
+Reciclado
+===
+```{r}
+
+```
+RAE(Residuo de Aparatos Eléctricos y Electrónicos)
+===
+```{r}
+
+```
+Benchmarking de intendentes
+===
